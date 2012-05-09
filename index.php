@@ -103,10 +103,10 @@ foreach ($gr3->getImageCollection() as $image)
 </div>
 
 <div class="pull-right" style="margin-bottom:8px">
-  <h3>Speed</h3>
+  <h3>Delay</h3>
   <div class="btn-group">
-    <a class="btn" href="#" id="increase-slide-speed"><i class="icon-plus"></i></a>
-    <a class="btn" href="#" id="decrease-slide-speed"><i class="icon-minus"></i></a>
+    <a class="btn" href="#" id="increase-slide-delay"><i class="icon-plus"></i></a>
+    <a class="btn" href="#" id="decrease-slide-delay"><i class="icon-minus"></i></a>
   </div>
 </div>
 </div>
@@ -144,12 +144,12 @@ foreach ($gr3->getImageCollection() as $image)
       fadeduration: 250 // transition duration (milliseconds)
     });
     
-    $('#increase-slide-speed').click(function(e) {
+    $('#increase-slide-delay').click(function(e) {
       mygallery.setting.autoplay[1] += 100;
       e.preventDefault();
     });
     
-    $('#decrease-slide-speed').click(function(e) {
+    $('#decrease-slide-delay').click(function(e) {
       var new_speed = mygallery.setting.autoplay[1] - 100;
       
       if (new_speed < 100)
